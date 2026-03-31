@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mesif-hotel-simulator"
+version = "1.0.0"
+description = "Simulador do protocolo MESIF aplicado ao controle de quartos de hotel."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["mesif", "cache-coherence", "computer-architecture", "simulator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Education",
+]
+
+[project.scripts]
+mesif-terminal = "mesif_simulator.simulator:main"
+mesif-gui = "mesif_simulator.gui:launch"
+
+[tool.setuptools.packages.find]
+include = ["mesif_simulator*"]

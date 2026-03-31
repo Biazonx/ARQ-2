@@ -1,0 +1,8 @@
+{
+  "include": [
+    "mesif_simulator",
+    "tests",
+    "run_terminal.py",
+    "run_gui.py"
+  ]
+}
